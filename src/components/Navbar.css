@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   width: 100vw;
   height: 70px;
   background-color: #ffffff;
@@ -7,4 +7,30 @@
   line-height: 70px;
   text-align: center;
   margin-bottom: 50px;
+} */
+
+.container {
+  width: 100vw;
+  height: 70px;
+  background-color: white;
+  border: solid 2px black;
+  margin-bottom: 50px;
+  display: flex;
 }
+
+h1 {
+  align-items: center;
+  font-size: 30px;
+}
+
+p {
+  justify-content: flex-end;
+  text-align: right;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 5px;
+  background-color: chartreuse;
+}
+
+

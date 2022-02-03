@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "John",
+        "email": "John@gmail.com",
+        "phoneNumber": "2061234567",
+        "membershipStatus": "Active"
+    },
+    {
+        "id": 2,
+        "name": "Jim",
+        "email": "Jim@gmail.com",
+        "phoneNumber": "2061234567",
+        "membershipStatus": "Active"
+    },
+    {
+        "id": 3,
+        "name": "Mike",
+        "email": "Mike@gmail.com",
+        "phoneNumber": "2061234567",
+        "membershipStatus": "Inactive"
+    },
+    {
+        "id": 4,
+        "name": "Billy",
+        "email": "Billy@gmail.com",
+        "phoneNumber": "2067293167",
+        "membershipStatus": "Active"
+    },
+    {
+        "id": 5,
+        "name": "Eugene",
+        "email": "Eugene@gmail.com",
+        "phoneNumber": "2061234567",
+        "membershipStatus": "Active"
+    }
+]

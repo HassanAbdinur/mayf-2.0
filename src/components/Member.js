@@ -1,16 +1,20 @@
-import React from "react";
+// import React, { useState } from "react";
+// import data from './mock-data.json';
 
-export default function Member() {
-  const date = new Date().toString().slice(3, 24);
-  console.log(date);
+// export default function Member() {
+//   // const date = new Date().toString().slice(3, 24);
+//   // console.log(date);
 
-  return (
-    <tr>
-      <td> Yasir </td>
-      <td> Yasir@email.com </td>
-      <td> 11-11-1111 </td>
-      <td> ACTIVE </td>
-      <td> {date} </td>
-    </tr>
-  );
-}
+//   const [contacts, setContacts] = useState(data);
+
+//   return (
+//     {contacts.map((contact) =>  (
+//       <tr>
+//         <td>{contact.name}</td>
+//         <td>{contact.email}</td>
+//         <td>{contact.phoneNumber}</td>
+//         <td>{contact.membershipStatus}</td>
+//     </tr>
+//     ))}
+//   );
+// }

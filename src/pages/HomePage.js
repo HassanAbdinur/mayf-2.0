@@ -1,14 +1,18 @@
-import React from "react";
-import Member from "../components/Member";
+import React, { useState } from "react";
+import data from '../mock-data.json';
+// import Member from "../components/Member";
 import "./HomePage.css";
 
 export default function HomePage() {
+
+  const [contacts, setContacts] = useState(data);
+
   return (
     <div className="home--page">
-      <h1> MEMBERS OF THE HOLY GRAIL ASSOCIATION</h1>
+      <h1 style={{ color: "white" }}> Members Account List</h1>
       <div className="filter">
-        <span> SHOW </span>
         <select>
+          <option value="" selected="selected" className="activity">ACTIVITY STATUS</option>
           <option> All Members</option>
           <option> Active Members</option>
           <option> Non-Active Members</option>
@@ -22,11 +26,17 @@ export default function HomePage() {
             <th> EMAIL </th>
             <th> PHONE NUMBER </th>
             <th> MEMBERSHIP STATUS </th>
-            <th> DATE </th>
           </tr>
         </thead>
         <tbody>
-          <Member />
+          {contacts.map((contact) => (
+            <tr>
+              <td>{contact.name}</td>
+              <td>{contact.email}</td>
+              <td>{contact.phoneNumber}</td>
+              <td>{contact.membershipStatus}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

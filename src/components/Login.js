@@ -5,9 +5,10 @@ import { useNavigate } from "react-router-dom";
 export default function Login() {
   const navigate = useNavigate();
 
-  function handleClick() {
-    navigate("/register");
-  }
+  const handleClick = () => navigate("/register");
+
+  const handleChange = () => navigate("/");
+  
   return (
     <div className="login--form">
       <form>
@@ -18,14 +19,19 @@ export default function Login() {
         <label> PASSWORD</label>
         <br />
         <input /> <br />
-        <button> LOGIN</button>
+        <button
+          style={{ cursor: "pointer" }}
+          onClick={handleChange}
+        > 
+        LOGIN
+          </button>
         <br />
         <span> Dont have an account ?</span>
         <button
           onClick={handleClick}
-          style={{ backgroundColor: "black", color: "white" }}
+          style={{ backgroundColor: "#ffa500", color: "black", cursor: "pointer" }}
         >
-          SIGN UP
+          REGISTER ACCOUNT
         </button>
       </form>
     </div>
